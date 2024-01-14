@@ -1,0 +1,24 @@
+<section class="sign-in">
+  <form class="form" [formGroup]="formGroup" (formSubmit)="submit()">
+    <label class="form__label" for="login">{{ "AUTH.EMAIL" | translate }}</label>
+    <input class="form__input" id="login" [formControl]="formGroup.controls.email" type="email">
+
+    <label class="form__label" for="password">{{ "AUTH.PASSWORD" | translate }}</label>
+    <input class="form__input" id="password" [formControl]="formGroup.controls.password" type="password">
+
+    <div class="link">
+      <a [routerLink]="SIGNUP_LINK">{{ "AUTH.SIGNUP" | translate }}</a>
+    </div>
+
+    <div class="link">
+      <a [routerLink]="FORGOT_PASSWORD_LINK">{{ "AUTH.FORGOT_PASSWORD" | translate }}</a>
+    </div>
+
+    <button type="submit" [disabled]="formGroup.invalid || loadingSg()">
+      Login
+      @if (loadingSg()) {
+
+      }
+    </button>
+  </form>
+</section>

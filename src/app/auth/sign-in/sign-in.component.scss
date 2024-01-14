@@ -1,0 +1,17 @@
+:host {
+
+    a.blue-link {
+        color: #548eaa;
+        cursor: pointer;
+        &:hover {
+            color: #487284;
+            text-decoration: underline;
+        }
+    }
+
+    .error-message {
+        padding: 20px 0;
+    }
+}
+
+
