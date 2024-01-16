@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  padding: 20px 80px;
+
+  &__nav-list {
+    list-style: none;
+    margin: 0;
+  }
+}
