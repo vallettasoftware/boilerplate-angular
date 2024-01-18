@@ -1,10 +1,13 @@
 <header class="header">
   <img class="header__logo" src="">
-  <nav class="header__navigation">
-    <ul class="header__nav-list">
-      <li class="header__nav-item">
-        <a [routerLink]="['/']" routerLinkActive="nav-link_active" class="nav-link">Home</a>
-      </li>
-    </ul>
-  </nav>
+  @if (isAuthorized$ | async) {
+    <nav class="header__navigation">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a [routerLink]="['/']" routerLinkActive="nav-link_active" class="nav-link">{{ "HEADER.NAVIGATION.HOME" | translate }}</a>
+        </li>
+      </ul>
+    </nav>
+    <button (click)="logout()">Logout</button>
+  }
 </header>

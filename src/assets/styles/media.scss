@@ -1,0 +1,42 @@
+$tablet: 768px; //tablet
+$laptop: 1200px; //pc, laptop
+$mac: 1400px; // mac
+$desktop: 1600px; //pc (*optional)
+$lagre: 1900px; //large view port width pc (*optional)
+
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media only screen and (min-width: $tablet) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin mac {
+  @media only screen and (min-width: 1350px) and (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desctop) {
+    @content;
+  }
+}
+
+@mixin lagre {
+  @media only screen and (min-width: $lagre) {
+    @content;
+  }
+}

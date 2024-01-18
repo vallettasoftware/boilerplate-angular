@@ -39,17 +39,6 @@ export class SignInComponent {
       this.formGroup.setErrors({ formError: 'E-mail or password is wrong.' });
       return;
     }
-
-    this.loadingSg.set(true);
-    // this.authService.login$(value.email, value.password).subscribe({
-    //   next: () => this.loadingSg.set(false),
-    //   error: (errorResponse) => {
-    //     const error = JSON.parse(errorResponse.error);
-    //     if (error.code && error.code === 101) {
-    //       this.formGroup.setErrors({ formError: '' });
-    //     }
-    //     this.loadingSg.set(false);
-    //   },
-    // });
+    this.authService.login(value.email, value.password);
   }
 }

@@ -2,7 +2,7 @@
 
 A base functional Angular project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
-*Change `PromoBoilerplateAngular` to your project name.*
+_Change `PromoBoilerplateAngular` to your project name._
 
 ## Development server
 
@@ -31,6 +31,7 @@ This boilerplate will help you get start new project faster.
 ## Authorization module
 
 Auth module has base logic and structure
+
 - AuthModule defines all auth entities
 - AuthService provides data from store, methods for components and dispathes auth actions
 - AuthApiServices makes requests to Auth endpoint
@@ -42,6 +43,7 @@ Auth module has base logic and structure
 
 Included state managment by NGXS package. NGXS is modeled after the CQRS pattern popularly implemented in libraries like Redux and NgRx but reduces boilerplate by using modern TypeScript features such as classes and decorators.
 Also we configured following really useful plugins:
+
 - [Logger](https://www.ngxs.io/plugins/logger) outputs state and it's changes
 - [Storage](https://www.ngxs.io/plugins/storage) saves selected parts of store between app reloading. It uses localStorage and restores previous state
 - [Router](https://www.ngxs.io/plugins/router) allows to navigate by actions
@@ -54,6 +56,6 @@ Native internalization in Angular very cumbersome and difficult.
 Internalization with [ngx-translate](https://github.com/ngx-translate/core) is so easy.
 Just create JSON dictionary `/assets/i18n/[lang].json` for each language and output it with translation pipe: `{{ 'MULTI-LEVEL.KEY' | translate }}`.
 
-## Testing 
+## Testing
 
 Karma is available in the boilerplate

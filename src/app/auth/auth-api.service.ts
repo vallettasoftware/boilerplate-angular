@@ -13,14 +13,10 @@ export class AuthApiService {
   constructor(private http: HttpClient) {}
 
   public login$(email: string, password: string) {
-    return this.http
-      .post<string>(this.LOGIN_API, { email, password })
-      .pipe(first());
+    return this.http.post<string>(this.LOGIN_API, { email, password });
   }
 
   public register$(email: string, password: string) {
-    return this.http
-      .post<string>(this.REGISTER_API, { email, password })
-      .pipe(first());
+    return this.http.post<string>(this.REGISTER_API, { email, password });
   }
 }

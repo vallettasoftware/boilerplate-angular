@@ -1,5 +1,5 @@
 <section class="sign-up">
-  <form class="form" [formGroup]="formGroup" (formSubmit)="submit()">
+  <form class="form" [formGroup]="formGroup" (submit)="submit()">
     <label class="form__label" for="login">{{ "AUTH.EMAIL" | translate }}</label>
     <input class="form__input" id="login" [formControl]="formGroup.controls.email" type="email">
 
@@ -17,7 +17,7 @@
     <button type="submit" [disabled]="formGroup.invalid || loadingSg()">
       Login
       @if (loadingSg()) {
-
+        <preloader></preloader>
       }
     </button>
   </form>

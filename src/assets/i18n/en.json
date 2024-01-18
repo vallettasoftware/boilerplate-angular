@@ -3,9 +3,15 @@
     "TITLE": "Translated value",
     "EMAIL": "E-mail",
     "PASSWORD": "Password",
+    "PASSWORD_CONFIRMATION": "Confirm password",
     "SIGNUP": "Create Account",
     "SIGNIN": "Login",
     "SIGNIN_LINK": "Have you already had an account?",
     "FORGOT_PASSWORD": "Forgot your password?"
+  },
+  "HEADER": {
+    "NAVIGATION": {
+      "HOME": "Home"
+    }
   }
 }

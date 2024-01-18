@@ -41,17 +41,7 @@ export class SignUpComponent {
       return;
     }
     const value: SignUpFormModel = this.formGroup.getRawValue();
-
     this.loadingSg.set(true);
-    // this.authService.register$(value).subscribe({
-    //   next: () => this.loadingSg.set(false),
-    //   error: (errorResponse) => {
-    //     const error = JSON.parse(errorResponse.error);
-    //     if (error.code && error.code === 101) {
-    //       this.formGroup.setErrors({ formError: '' });
-    //     }
-    //     this.loadingSg.set(false);
-    //   },
-    // });
+    this.authService.register(value.email, value.password);
   }
 }

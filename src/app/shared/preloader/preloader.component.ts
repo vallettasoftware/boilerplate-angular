@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './preloader.component.scss',
   standalone: true,
 })
-export class PrealoaderComponent implements OnInit {
+export class PreloaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}

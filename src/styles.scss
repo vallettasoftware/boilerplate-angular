@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/normalize.scss";
+@import "./assets/styles/variables.scss";
+
+// FORMS
+input.ng-invalid.ng-dirty {
+  border-color: $error-color;
+}
